@@ -4,24 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="2.css" />
+    <title>RockPaperScissor</title>
+    <link rel="stylesheet" href="./2.css" />
   </head>
   <body>
     <main>
       <input type="color" id="changeColors" />
       <h1>Choose your move</h1>
-      <div class="cnt">
+      <div class="score">
         <button id="rock">Rock</button>
         <button id="paper">Paper</button>
         <button id="scissor">Scissor</button>
       </div>
       <h2>Result:</h2>
-      <div class="cnt">
+      <div class="score">
         <span>player</span>
-        -
-        <span>opponent</span>
-        <br />
+        <span>-</span>
+        <div>opponent</div>
+      </div>
+      <div>
         <span id="playerScore">0</span>
         <span id="draw">0</span>
         <span id="opponentScore">0</span>

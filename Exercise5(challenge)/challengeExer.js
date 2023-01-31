@@ -53,9 +53,7 @@ const getMultipliedBoxDigits = (digits) => {
     let result = 0;
     let prePos = chart[0];
     chart.forEach (e=> {
-        if(prePos != e && e == "~"){
-            result++;
-        }
+        if(prePos != e && e == "~") result++;
         prePos = e;
     });
     result = result/chart.length;

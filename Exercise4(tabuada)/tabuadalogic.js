@@ -1,6 +1,6 @@
 let value = document.getElementById("value");
 const button = document.getElementById("button");
-const table = document.getElementById("table");
+const table = document.getElementById("firstRow");
 const tbody = document.getElementById("tbody");
 const trFirst = document.getElementById("repeat");
 
@@ -12,7 +12,7 @@ let tr;
 let td;
 
 button.addEventListener("click", () => {
-  trFirst.remove();
+  trFirst.innerHTML = "";
   for (let i = 0; i < 11; i++) {
     tr = document.createElement("tr");
     td = document.createElement("td");
