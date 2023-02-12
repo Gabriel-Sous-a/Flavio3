@@ -1,0 +1,22 @@
+span {
+  background-color: aqua;
+  height: 4vh;
+}
+
+div {
+    display: flex;
+}
+form{
+    width: 100%;
+}
+.board {
+  border: 1px solid pink;
+}
+
+.boardTh {
+    border: 1px solid black;
+}
+
+table{
+  width: 100%;
+}
