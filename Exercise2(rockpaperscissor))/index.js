@@ -11,34 +11,25 @@ function bgChange() {
 
 document.getElementById("rock").addEventListener(
   "click",
-  (callFunction = () => {
-    getInput("rock");
-  })
+  () => getInput("rock")
 );
 document.getElementById("paper").addEventListener(
   "click",
-  (callFunction = () => {
-    getInput("paper");
-  })
+  () => getInput("paper")
 );
 document.getElementById("scissor").addEventListener(
   "click",
-  (callFunction = () => {
-    getInput("scissor");
-  })
+  () => getInput("scissor")
 );
 
 function getInput(input) {
-  console.log("player: " + input);
   const cpuInput = cpuChoice();
-  console.log("CPU: " + cpuInput);
   if (
     (input === "rock" && cpuInput === "paper") ||
     (input === "scissor" && cpuInput === "rock") ||
     (input === "paper" && cpuInput === "scissor")
   ) {
     //cpu wins
-    console.log("cpu won");
     counterOpp++;
     document.getElementById("opponentScore").innerHTML = counterOpp;
   }else if (
@@ -47,12 +38,10 @@ function getInput(input) {
     (input === "scissor" && cpuInput === "paper")
   ) {
     //player wins
-    console.log("player won");
     counterPl++;
     document.getElementById("playerScore").innerHTML = counterPl;
   }else{
     //draw
-    console.log("draw");
     counterDraw++;
     document.getElementById("draw").innerHTML = counterDraw;
   }
